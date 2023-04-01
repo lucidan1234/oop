@@ -1,0 +1,133 @@
+body {
+  background-image: url(assets/bg-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+.heroes-container {
+  display: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 300px;
+  height: 290px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #fff;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero:hover {
+  /* transform: scale(1.1); */
+  opacity: 0.7;
+}
+
+.hero-details {
+  margin-top: 20px;
+  display: none;
+}
+
+.show-hero {
+  color: darkred;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+  display: none;
+}
+
+.hero-avatar {
+  width: auto;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.back {
+  transform: rotateY(180deg);
+  position: absolute;
+  border-radius: 50px;
+  height: 450px;
+  background: rgba(223, 144, 139, 0.5);
+}
+
+.show-heroes {
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.start-fight {
+  display: none;
+  padding: 20px;
+  font-size: 20px;
+  width: 300px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.hero-name {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  height: 50px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+@media only screen and (max-width:786px) {
+  body {
+    background-image: url(./assets/Aquaman_Vol_8_6_Textless.webp);
+  }
+
+  .heroes-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    /* height: 1450px; */
+    width: 150px;
+  }
+
+  .hero {
+    margin-bottom: 20px;
+  }
+}
